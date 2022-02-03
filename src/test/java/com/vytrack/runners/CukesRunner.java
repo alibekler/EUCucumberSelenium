@@ -7,11 +7,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"json:target/cucumber.json"},
-        features = "src/test/resources/features",
-        dryRun = false,
+        features = "src/test/resources/features/NavigationMenu.feature",
         glue = "com/vytrack/step_definitions",
-        tags = "@wip"
+        tags = "@smoke"
 
 
         //dryRun = false, //
