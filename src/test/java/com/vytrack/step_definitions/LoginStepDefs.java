@@ -68,4 +68,5 @@ public class LoginStepDefs {
 
         Assert.assertTrue(Driver.get().getTitle().contains(arg0));
     }
+
 }
