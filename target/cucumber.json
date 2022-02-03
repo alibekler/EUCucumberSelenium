@@ -1,0 +1,115 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-03T12:53:31.488Z",
+        "before": [
+          {
+            "result": {
+              "duration": 731000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "login as a driver",
+        "description": "",
+        "id": "login-as-different-users;login-as-a-driver",
+        "after": [
+          {
+            "result": {
+              "duration": 107013000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3211994000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3633753000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user logs in using \"User10\" and \"UserUser123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"User10\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"UserUser123\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefs.theUserLogsInUsingAnd(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6643000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user should be able to login",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2977000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the title contains \"Dashboard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefs.theTitleContains(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Login as different users",
+    "description": "",
+    "id": "login-as-different-users",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LoginWithParameters.feature",
+    "tags": []
+  }
+]
