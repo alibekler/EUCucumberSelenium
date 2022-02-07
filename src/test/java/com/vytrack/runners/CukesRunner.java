@@ -10,6 +10,7 @@ import org.junit.runner.RunWith;
         plugin = {"json:target/cucumber.json"},
         features = "src/test/resources/features",
         glue = "com/vytrack/step_definitions",
+        dryRun = false,
         tags = "@wip"
 
 

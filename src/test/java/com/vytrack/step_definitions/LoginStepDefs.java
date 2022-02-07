@@ -69,4 +69,25 @@ public class LoginStepDefs {
         Assert.assertTrue(Driver.get().getTitle().contains(arg0));
     }
 
+    @Given("the user logged in as {string}")
+    public void theUserLoggedInAs(String usertype) {
+        LoginPage loginPage = new LoginPage();
+        String username;
+        String password;
+
+        if (usertype.equals("driver")){
+            username=ConfigurationReader.get("driver_username");
+            password=ConfigurationReader.get("driver_password");
+            loginPage.login(username, password);
+        }else if (usertype.equals("store manager")){
+            username=ConfigurationReader.get("store_manager_username");
+            password=ConfigurationReader.get("store_manager_password");
+            loginPage.login(username, password);
+        }else if (usertype.equals("sales manager")){
+            username=ConfigurationReader.get("sales_manager_username");
+            password=ConfigurationReader.get("sales_manager_password");
+            loginPage.login(username, password);
+        }
+
+    }
 }

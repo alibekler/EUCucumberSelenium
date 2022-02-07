@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-02-03T13:25:11.729Z",
+        "start_timestamp": "2022-02-07T23:25:36.384Z",
         "before": [
           {
             "result": {
-              "duration": 674000,
+              "duration": 459000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "Default page number",
+        "line": 27,
+        "name": "log in as a given user",
         "description": "",
-        "id": "contacts-page;default-page-number",
+        "id": "contacts-page;log-in-as-a-given-user",
         "after": [
           {
             "result": {
-              "duration": 131826000,
+              "duration": 120576000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3110655000,
+              "duration": 6841987000,
               "status": "passed"
             },
-            "line": 4,
+            "line": 28,
             "name": "the user is on the login page",
             "match": {
               "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_is_on_the_login_page()"
@@ -47,53 +47,51 @@
           },
           {
             "result": {
-              "duration": 3893936000,
+              "duration": 5993048000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "the user enters the driver information",
+            "line": 29,
+            "name": "the user logs in using following credentials",
             "match": {
-              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_enters_the_driver_information()"
+              "location": "com.vytrack.step_definitions.ContactStepDefs.theUserLogsInUsingFollowingCredentials(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1443597000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the user navigates to \"Customers\" \"Contacts\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Customers\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"Contacts\"",
-                  "offset": 34
-                }
-              ],
-              "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.theUserNavigatesTo(java.lang.String,java.lang.String)"
-            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "John"
+                ]
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "Doe"
+                ]
+              },
+              {
+                "cells": [
+                  "username",
+                  "salesmanager101"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "UserUser123"
+                ]
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3042148000,
+              "duration": 4534000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "default page number should be 1",
+            "line": 34,
+            "name": "the user should be able to login",
             "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 30
-                }
-              ],
-              "location": "com.vytrack.step_definitions.NavigationMenuStepDefs.defaultPageNumberShouldBe(int)"
+              "location": "com.vytrack.step_definitions.LoginStepDefs.the_user_should_be_able_to_login()"
             },
             "keyword": "Then "
           }

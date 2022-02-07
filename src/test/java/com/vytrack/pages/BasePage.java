@@ -34,6 +34,9 @@ public abstract class  BasePage {
     @FindBy(linkText = "My User")
     public WebElement myUser;
 
+    @FindBy(xpath = "//a[@data-toggle='dropdown']")
+    public WebElement userFullName;
+
     public BasePage() {
         PageFactory.initElements(Driver.get(), this);
     }
