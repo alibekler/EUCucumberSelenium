@@ -3,6 +3,7 @@ package com.vytrack.step_definitions;
 import com.vytrack.pages.ContactsPage;
 import com.vytrack.pages.DashboardPage;
 import com.vytrack.utilities.BrowserUtils;
+import com.vytrack.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -32,6 +33,7 @@ public class NavigationMenuStepDefs {
 
     @When("the user navigates to {string} {string}")
     public void theUserNavigatesTo(String tab, String module) {
+        BrowserUtils.waitForPageToLoad(7);
         new DashboardPage().navigateToModule(tab,module);
     }
 

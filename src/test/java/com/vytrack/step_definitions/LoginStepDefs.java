@@ -30,6 +30,7 @@ public class LoginStepDefs {
 
     @Then("the user should be able to login")
     public void the_user_should_be_able_to_login() throws InterruptedException {
+        BrowserUtils.waitForPageToLoad(4);
        String title = Driver.get().getTitle();
         Assert.assertEquals("Dashboard", title);
     }
@@ -66,11 +67,17 @@ public class LoginStepDefs {
     @And("the title contains {string}")
     public void theTitleContains(String arg0) {
 
+        BrowserUtils.waitFor(4);
         Assert.assertTrue(Driver.get().getTitle().contains(arg0));
     }
 
     @Given("the user logged in as {string}")
     public void theUserLoggedInAs(String usertype) {
+
+        Driver.get().get(ConfigurationReader.get("url"));
+
+        BrowserUtils.waitForPageToLoad(5);
+
         LoginPage loginPage = new LoginPage();
         String username;
         String password;
@@ -88,6 +95,5 @@ public class LoginStepDefs {
             password=ConfigurationReader.get("sales_manager_password");
             loginPage.login(username, password);
         }
-
     }
 }
