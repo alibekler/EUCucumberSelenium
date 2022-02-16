@@ -19,3 +19,7 @@ Feature: Users should be able to login
     When the user enters the sales manager information
     Then the user should be able to login
 
+
+    Scenario: login
+      When scsdcsdvsd
+      Then sdcsfvdfvdfbdgbg
