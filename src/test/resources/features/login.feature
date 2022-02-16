@@ -1,7 +1,7 @@
-@loginTestAll //to run all test cases under this Feature file
+@loginTestAll @smoke //to run all test cases under this Feature file
 Feature: Users should be able to login
 
-  @login @smoke
+  @login
   Scenario: Login as a driver
     Given the user is on the login page
     When the user enters the driver information
@@ -19,7 +19,3 @@ Feature: Users should be able to login
     When the user enters the sales manager information
     Then the user should be able to login
 
-
-    Scenario: login
-      When scsdcsdvsd
-      Then sdcsfvdfvdfbdgbg

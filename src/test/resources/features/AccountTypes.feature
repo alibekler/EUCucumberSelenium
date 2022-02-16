@@ -11,19 +11,19 @@ Feature: Account types
       | admin         |
       | sales manager |
 
-  @wip
+  @smoke
   Scenario: driver user
     Given   the user logged in as "driver"
     When the user navigates to "Activities" "Calendar Events"
     Then the title contains "Calendar Events - Activities"
 
-  @wip
+
   Scenario: sales manager user
     Given   the user logged in as "sales manager"
     When the user navigates to "Customers" "Contacts"
     Then the title contains "Accounts - CustomerS"
 
-  @wip
+  @smoke
   Scenario: store manager user
     Given   the user logged in as "store manager"
     When the user navigates to "Customers" "Contacts"

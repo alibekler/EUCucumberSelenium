@@ -2,21 +2,21 @@
 Feature: Logged in user should be able to navigate to pages using top menu.
   once in the expected page, user should see correct page title.
 
-  @vehiclesMod @smoke
+  @vehiclesMod
   Scenario: Navigate to Fleet --> Vehicles
     Given the user is on the login page
     And the user enters the sales manager information
     When the user should navigate to Fleet tab Vehicle module
     Then the title should be the same as module name
 
-  @CampaignsMod @db @smoke
+  @CampaignsMod @db
   Scenario: Navigate to Marketing --> Campaigns
     Given the user is on the login page
     And the user enters the sales manager information
     When the user navigates to Marketing tab Campaigns module
     Then the title should be the same as module name
 
-  @CalendarEventsMod  @smoke
+  @CalendarEventsMod
   Scenario: Navigate to Activities --> Calendar Events
     Given the user is on the login page
     And the user enters the sales manager information

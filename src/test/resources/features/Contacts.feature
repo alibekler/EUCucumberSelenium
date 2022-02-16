@@ -5,10 +5,10 @@ Feature: Contacts page
     Given the user is on the login page
 
 
-    @lol
+    @lol @smoke
   Scenario: Default page number
     And the user enters the driver information
-    When the user navigates to "Customer" "Contacts"
+    When the user navigates to "Customers" "Contacts"
     Then default page number should be 1
       #aremoved s from Customers to fail for taking screenshot
 
