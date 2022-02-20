@@ -14,7 +14,7 @@ Feature: Contacts page
 
 
 
-
+@smoke
     Scenario: Menu options
       And the user logged in as "sales manager"
       Then user should see following options

@@ -27,6 +27,7 @@ public class ContactStepDefs {
         System.out.println(dataTable);
 
         List<String> actualOptions = BrowserUtils.getElementsText(new DashboardPage().menuOptions);
+        BrowserUtils.waitForPageToLoad(3);
         Assert.assertEquals("verify that those tables are correct", actualOptions, dataTable);
 
     }
