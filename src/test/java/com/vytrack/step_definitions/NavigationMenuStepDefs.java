@@ -33,7 +33,7 @@ public class NavigationMenuStepDefs {
 
     @When("the user navigates to {string} {string}")
     public void theUserNavigatesTo(String tab, String module) {
-        BrowserUtils.waitForPageToLoad(7);
+        BrowserUtils.waitForPageToLoad(10);
         new DashboardPage().navigateToModule(tab,module);
     }
 

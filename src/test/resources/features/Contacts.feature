@@ -36,3 +36,10 @@ Feature: Contacts page
      | username  | salesmanager101 |
      | password  | UserUser123     |
     Then the user should be able to login
+
+    @wip
+    Scenario: Contacts test with email
+      Given the user logged in as "sales manager"
+      And the user navigates to "Customers" "Contacts"
+      When the user clicks "mbrackstone9@example.com" from contacts
+      Then the information should be the same as database information
